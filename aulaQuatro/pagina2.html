@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+            background-image: url(img/gettyimages-1132930101.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .objeto {
+            text-align: center;
+        }
+
+        .ladoesquerdo {
+            text-align: left;
+        }
+
+        body {
+            background-color: #A9A9A9;
+        }
+
+        .text {
+            margin-left: 52em;
+            display: block;
+        }
+
+        .pontinhos {
+            margin-left: 53em;
+            display: block;
+        }
+
+        .texto {
+            margin-left: 47em;
+            display: block;
+        }
+
+        .impute {
+            margin-left: 47em;
+            display: block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Cadastro Dev</title>
+</head>
+
+<body>
+    <h1 class="objeto">Cadastro de Dev</h1>
+    <h5 class="objeto">Complete com suas informacões</h5>
+    <div class="text">
+        <label class="ladoesquerdo">Nome</label><br>
+    </div>
+    <div class="objeto">
+        <input type="text" size="30" maxlength="150" /><br><br>
+    </div>
+
+    <div class="text">
+        <label class="ladoesquerdo">Sobre nome</label><br>
+    </div>
+    <div class="objeto">
+        <input type="text" size="30" maxlength="150" /><br><br>
+    </div>
+
+    <div class="text">
+        <label class="ladoesquerdo">Email</label><br>
+    </div>
+    <div class="objeto">
+        <input type="text" size="30" maxlength="150" /><br><br>
+    </div>
+    <p class="objeto">De qual lado da aplicação vc desenvolve</p>
+    <div class="text">
+        <input type="radio" id="alternativa1" name="alternativa" value="A" /><label for="alternativa1">Front-end</label>
+        <br>
+        <input type="radio" id="alternativa2" name="alternativa" value="B" /><label for="alternativa2">Back-End</label>
+        <br>
+        <input type="radio" id="alternativa3" name="alternativa" value="C" /><label for="alternativa3">FullStack</label>
+    </div>
+    <br>
+    <div class="text">
+        <label>Senioridade</label>
+        <select name="tp_endereco" id="tp_endereco">
+            <option value="AA">--Selecione--</option>
+            <option value="AA">Júnior</option>
+            <option value="AB">Pleno</option>
+            <option value="AC">Senior</option>
+            <option value="AD">Especialista</option>
+        </select>
+    </div>
+    <p class="objeto">Selecione as tecnologia que você utiliza:</p>
+    <div class="texto">
+        <input type="checkbox" id="alternativa1" name="alternativa" value="A" /><label for="alternativa1">HTML</label>
+        <input type="checkbox" id="alternativa2" name="alternativa" value="B" /><label for="alternativa2">CSS</label>
+        <input type="checkbox" id="alternativa3" name="alternativa" value="C" /><label for="alternativa3">JavaScript</label>
+        <input type="checkbox" id="alternativa4" name="alternativa" value="C" /><label for="alternativa4">PHP</label>
+        <input type="checkbox" id="alternativa5" name="alternativa" value="C" /><label for="alternativa5">C#</label>
+        <input type="checkbox" id="alternativa6" name="alternativa" value="C" /><label for="alternativa6">Python</label>
+        <input type="checkbox" id="alternativa7" name="alternativa" value="C" /><label for="alternativa7">Java</label>
+    </div>
+    <br>
+    <div class="impute">
+        <p>Conte um pouco da sua Experiência</p>
+        <textarea name="texto" id="texto" rows="10" cols="60"></textarea>
+    </div>
+    <div class="objeto">
+    <input type="submit" name="enviar" value="Avaliar"/>
+    </div>
+</body>
+
+</html>

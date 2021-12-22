@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap%27%27');
+
+*{
+   font-family: "Rhodium Libre", sans-serif;
+}
+
+h1{
+    margin-left:200px;
+    margin-top: 50px;
+    font-size: 100px;
+}
+
+.corfundo{
+    background-color: #E42525;
+    border-radius: 7px;
+    border: none;
+    font-size:18px ;
+    outline: none;
+}
+.corfundo:hover{
+    border: none;
+} 
+
+.img{
+   margin-left: 300px;
+   width: 500px;
+}
+
+#mudardelugar{
+    margin-left: 1100px;
+    margin-top: -210px;
+    font-size: 18pt;
+}
+
+#mudardelugar h2{
+    font-size: 50px;
+   }
+
+.imgfooter{
+    margin-top: 100px;
+    width: 70px;
+
+    justify-content: flex-end;
+}
+.imgfooter2{
+    margin-top:200px;
+    width:258px ;
+
+}
+
+button{
+    width:300px;
+    height:50px;
+    font-size: 40pt;
+}
+
+.corfundoCadastro{
+    background-attachment: fixed;
+    background-color: #E42525;
+    border-radius: 7px;
+    border: none;
+    font-size:18px ;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.corfundoCadastro:hover{
+    background-color:#000000;
+    color:#E42525;
+}
+.msg{
+    width: 12%;
+    margin-left: 1100px;
+    
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #d34545;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    height: 16px;
+    margin-top: -300px;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #46aa4b;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    height: 16px;
+}

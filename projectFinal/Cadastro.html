@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/Cadastro.css">
+</head>
+
+<body>
+    <h1>SECARD</h1>
+
+    <img src="image/senaiDeitado.png" class="img">
+
+    
+    <div class="msg">
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+    </div>
+
+    <form id="mudardelugar">
+
+        <h2>Cadastro</h2>
+        <br>
+
+        <label><b>Nome Completo</b></label> <br>
+        <input type="text" class="corfundo">
+
+        <br>
+        <label><b>CPF</b></label> <br>
+        <input type="text" class="corfundo"> <br>
+
+        <label><b>Senha</b></bSenha></label> <br>
+        <input type="text" class="corfundo">  <br>
+
+        <label><b>Confirmar Senha</b></label> <br>
+        <input type="text" class="corfundo">
+
+        <br><br><br>
+
+        <label for="cursos"><b>Tipo de Programa</b></label>
+
+        <select name="cursos" id="tipodecursos" class="corfundo">
+            <option><b>Selecione o Programa</b></option>
+            <option>Qualicação Profissional</option>
+            <option>Técnico de Nivel Médio</option>
+            <option>Graduação Tecnológica</option>
+            <option>Educação Infantil</option>
+            <option>Ensino Fundamental</option>
+            <option>Ensino Médio</option>
+            <option>Educação de Jovens e Adultos</option>
+        </select>
+       
+        <br><br>
+
+        <label for="cursos"><b>Selecione o Curso</b> </label>
+        <select name="cursos" id="seleçaodecursos" class="corfundo">
+            <option><b>Selecione o Curso desejado</b></option>
+            <option>Alimentos e Bebidas</option>
+            <option>Automação E Mecatrônica</option>
+            <option>Automativa</option>
+            <option>CC- Edificações</option>
+            <option>CC- Instalações</option>
+            <option>Celulose E Papel</option>
+            <option>Construção Naval</option>
+            <option>Couro Calçados</option>
+            <option>EletroEletônica</option>
+            <option>Energia GTD</option>
+            <option>Energia Renovável</option>
+            <option>Energia Sucroalcoleira</option>
+            <option>Gemologia</option>
+            <option>Gestão</option>
+            <option>Gráfica E Editorial</option>
+            <option>Logística</option>
+            <option>Madeira E Mobilário</option>
+            <option>Meio Ambiente</option>
+            <option>MetalMecânica - Fabricação Mecânica</option>
+            <option>MetalMecânica - Mecânica</option>
+            <option>MetalMecânica - Metalurgia</option>
+            <option>MetalMecânica - Soldagem</option>
+            <option>Metrologia</option>
+            <option>Minerais não Metálicos</option>
+            <option>Mineração</option>
+            <option>Petróleo E Gás</option>
+            <option>Polímeros</option>
+            <option>Química</option>
+            <option>Refrigeração E Climatização</option>
+            <option>Segurança no Trabalho</option>
+            <option>Telecomunicações</option>
+            <option>TI - Hardware</option>
+            <option>TI - Software</option>
+            <option>Transporte Ferroviário</option>
+            <option>Têxtil</option>
+            <option>Vestuário</option>
+        </select>
+        <br>
+        <br>
+
+        <button class="corfundoCadastro" onclick="cadastro()"><b>Fizalizar Cadastro</b></button>
+    </form>
+    <footer>
+        <img src="image/Sem título.png" class="imgfooter">
+        <img src="image/senai.png" class="imgfooter2">
+    </footer>
+    <script src="js/Cadastro.js"></script>
+
+</body>
+
+</html>

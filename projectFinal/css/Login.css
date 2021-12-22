@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap%27');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Rhodium Libre",sans-serif;
+}
+h1{
+    margin-left:200px;
+    margin-top: 50px;
+    font-size: 100px;
+}
+.corfundologin{
+    background-color: #E42525;
+    border-radius: 7px;
+    border: none;
+    font-size:25px ;
+    outline: none;
+}
+
+#mudarlogin{
+    margin-left: 1200px;
+    margin-top: -450px;
+    font-size: 25px;
+}
+
+img{
+    margin-left: 500px;
+    margin-top: 100px;
+    width: 400px;
+}
+
+
+.imgfooterlogin{
+    margin-top: 400px;
+    width: 100px;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+.imgfooterlogin2{
+    margin-top:200px;
+    width:372px;
+    margin-left: 10px;
+}
+
+button{
+    margin-left: 300px;
+    padding: 5px 5px;
+}
+
+button:hover{
+    background-color: #000000;
+    color: #E42525;
+}
+input{
+    color: rgb(27, 27, 27);
+    padding: 5px 15px;
+}
+.fa-eye{
+    margin-left: -45px;
+    cursor: pointer;
+}
+
+hr{
+    height: 5px;
+    color: #000000;
+    width: 60%;
+}
+
+p{
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+a{
+    color: #E42525;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #e25513;
+}

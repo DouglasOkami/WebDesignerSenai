@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap%27');
+
+:root{
+    --green:#27ae60;
+    --black:#000000;
+    --light-color:rgb(255, 255, 255);
+    --box-shadow:0 0.5rem 1.5rem rgba(0,0,0,.1); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Rhodium Libre",sans-serif;
+    text-transform: capitalize;
+    transition: all .2s linear;
+} 
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background:var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #e42525;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    height: 100px;
+}
+
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--black);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: var(--light-color);
+    background: var(--black);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+color: #fff;
+background: var(--black);
+transform: rotate(360deg);
+}
+
+
+header .icons #menu-bars{
+    display: none;
+}
+/* style search*/
+
+#search-form{
+    position: fixed;
+    top: -110%;left: 0;
+    height: 100%;width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    }
+    
+    #search-form.active{
+        top: 0;
+    }
+    
+    #search-form #search-box{
+        width: 50rem;
+        border-bottom: .1rem solid #fff;
+        padding: 1rem 0;
+        color: #fff;
+        font-size: 3rem;
+        text-transform: none;
+        background: none;
+    }
+    
+    #search-form #search-box::placeholder{
+        color: #eee;
+    }
+    
+    #search-form #search-box::-webkit-search-cancel-button{
+        -webkit-appearance: none;
+    }
+    
+    #search-form label{
+        color:#fff;
+        cursor: pointer;
+        font-size: 3rem;
+    }
+     
+    #search-form label:hover{
+        color: var(--green);
+    }
+    
+    #search-form #close{
+        position: absolute;
+        color: #fff;
+        cursor: pointer;
+        top: 2rem;right: 3rem;
+        font-size: 5rem;
+    }
+
+/* Style Carousel */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+section .swiper {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -350px;
+  margin-left: -350px;
+
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+
+}
+.img-carousel{
+    object-fit: cover;
+    height: 540px;
+}
+/*Style Informações */
+.informacoes{
+    text-transform: uppercase;
+    display: block;
+    margin-left: 20px;
+    margin-top: 650px;
+    font-size: 30px;
+}
+
+.texto-ul .texto-li{
+    margin-left: 50px;
+    list-style-type:initial;
+    font-size: 22px;
+}
+
+/*Style Informações Images*/
+#image-info{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 900px;
+    margin-top: -220px;
+}
+#image-senai-grande{
+    margin-left: 1500px;
+    margin-top: -120px;
+}
+
+
+/*Style Footer*/
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background-color: #E42525;
+    margin-top: 20px;
+}
+
+.footer .box-container-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 2fr));
+    gap: 1.5rem;
+    background-color: #E42525;
+    margin-top: 20px;
+}
+
+.footer .box-container-img .box .img-footer-1{
+    margin-left: 30px;
+    margin-top:240px;
+}
+.footer .box-container-img .box .img-footer-2{
+    margin-left: 30px;
+}
+
+
+.footer .box-container .box h3{
+    padding: .5rem 0;
+    font-size: 4.5rem;
+    color:  #000000;
+    background-color: #E42525;
+    margin-left: 20px;
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 2.0rem;
+    color:  #000000;
+    background-color: #E42525;
+    margin-left: 20px;
+}
+
+.footer .box-container .box a:hover{
+   color: #fff;
+}
+.footer .credit{
+    background-color: #E42525;
+    text-align: center;
+    border-top:.1rem solid rgba(0, 0,0, .1);
+    font-size: 2rem;
+    padding: .5rem;
+    padding-top: 1.5rem;
+}
+ 
+hr{
+    height: 3px;
+    background-color: #000000;
+}
+
+@media (max-width:991px){
+
+    html{
+    font-size: 55%;   
+    }
+
+    header{
+    padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+        }
+}
+
+
+@media (max-width:768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;left: 0; right: 0;
+        background: #fff;
+        /*o rem ta controlando o tamanho da barrinha*/
+        border-top: .1rem solid rgba(0, 0,0, .2);
+        border-bottom: .1rem solid rgba(0, 0,0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+}   

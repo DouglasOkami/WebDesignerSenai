@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+.topo{
+    background-color: rgb(25, 0, 255);
+    width: 100%;
+    height: 60px;
+}
+body{
+    background-color: rgb(138, 136, 128);
+}
+
+.menu{
+    width: 888px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul{
+    width: 600px;
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 17px 30px;
+}
+.menu a:hover{
+    background-color: rgb(0, 234, 255);
+}
+/*--Banner--*/
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(../imagens/imagemfoda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.content{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.banner-text{
+    width: 460px;
+    height: 550px;
+}
+.banner-text h1{
+    font-size: 50px;
+    color: #fff;
+    border-bottom: solid 2px #00ffff;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.banner-text p{
+    font-size: 35px;
+    color: rgb(0, 89, 255);
+    text-transform: uppercase;
+}
+.mouse{
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+}
+.artigo-sobre img{
+    width: 400px;
+    height: 450px;
+}
+.artigo-sobre p{
+    color: #fff;
+}
+.sobre{
+    background-color: rgb(0, 132, 255);
+}
+.sobre h2{
+    color:  #00ffea;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.artigo-sobre{
+    display: flex;
+    justify-content: space-between;
+}
+.artigo-text-sobre{
+    width: 500px;
+}
+.artigo-text-sobre h3:nth-child(1){
+    font-size: 24px;
+    color: #00ffea;
+}
+.artigo-text-sobre h3:nth-child(2){
+    color: rgb(9, 32, 85);
+    font-size: 43px;
+    text-transform: uppercase;
+}
+.artigo-text-sobre p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.info{
+    width: 100%;
+    height: 200px;
+    text-transform: uppercase;
+}
+.info-card h4{
+    color: rgb(0, 75, 144);
+    font-size: 24px;
+}
+.info-card p{
+    width: 250px;
+    color: rgb(2, 61, 117);
+    font-size: 28px;
+    border: solid 1px #000000;
+    text-align: center; 
+    padding: 1rem;  
+}
+/* 
+.arrumando{
+    display: flex;
+    padding: 4rem;
+}
+ */
+ .info-flex{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.endereco{
+    width: 100%;
+    height: 500px;
+}
+.endereco h2{
+    font-size: 30px;
+    color: #FFAF00;
+}
+.end-text{
+    width: 500px;
+    height: 345px;
+    background-color: #010010;
+    border: solid 2px #340b65;
+}
+.end-text p{
+    font-size: 24px;
+    color: #47b92b;
+}
+.end-text img{
+    margin-left: 110px;
+}
+.alinhamento-centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(25, 0, 255);
+    color: #fff;
+}
+.azul{
+    background-color: #3587f3;
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #04AA6D; /* Add an active/current color */
+  }
+  .image-carrosel{
+    object-fit: cover;
+    height: 540px;
+}
+.font{
+    color: #fff;
+}

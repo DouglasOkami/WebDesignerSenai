@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        function somar(){
+           n1 = parseInt(document.getElementById("idnum1").value);
+           n2 = parseInt(document.getElementById("idnum2").value);
+           soma = n1 + n2;
+           document.getElementById("idresult").value = soma;
+        }
+        function subtrair(){
+           n1 = parseInt(document.getElementById("idnum1").value);
+           n2 = parseInt(document.getElementById("idnum2").value);
+           subtrairN = n1 - n2;
+           document.getElementById("idresult").value = subtrairN;
+        }
+        function multiplicar(){
+           n1 = parseInt(document.getElementById("idnum1").value);
+           n2 = parseInt(document.getElementById("idnum2").value);
+           multi = n1 * n2;
+           document.getElementById("idresult").value = multi;
+        }
+        function dividir(){
+           n1 = parseInt(document.getElementById("idnum1").value);
+           n2 = parseInt(document.getElementById("idnum2").value);
+           divi = n1 / n2;
+           document.getElementById("idresult").value = divi;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 11</title>
+</head>
+<body>
+    <main>
+        <form action="teste.html" method="post">
+            <label>Número 1</label>
+            <input type="text" id="idnum1" name="num1" size="10"><br><br>
+ 
+            <label>Número 2</label>
+            <input type="text" id="idnum2" name="num2" size="10"><br><br>
+        
+            <label>resultado</label>
+            <input type="text" id="idresult" name="resultado" size="10"><br><br>
+
+            <input type="button" value="somar" id="botton-enviar" onclick="somar()" >
+            <input type="button" value="dividir" id="botton-enviar" onclick="dividir()" >
+            <input type="button" value="multiplicar" id="botton-enviar" onclick="multiplicar()" >
+            <input type="button" value="subtrair" id="botton-enviar" onclick="subtrair()" >
+        </form>
+    </main>
+</body>
+</html>

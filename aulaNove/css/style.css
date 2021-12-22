@@ -1,0 +1,112 @@
+.desktop p{
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(109, 153, 51);
+}
+.tablet p{
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(51, 133, 153);
+}
+.phone p{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(153, 51, 51);
+}
+.geral{
+    display: flex;
+}
+.geral img{
+    width: 200px;
+    height: 200px;
+    padding: 5% 0 0 0;
+    margin-left: 200px;
+}
+@media(max-width:1200px){
+    .desktop p{
+        width: 468px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(109, 153, 51);
+        margin-top: 130px;
+    }
+    .tablet p{
+        width: 592px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(51, 133, 153);
+        margin-top: 20px;
+    }
+    .phone p{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(153, 51, 51);
+        margin-top: 20px;
+    }
+    .geral{
+        display: flex;
+    }
+    .geral .imagem1{
+        width: 150px;
+        height: 150px;
+        padding: 5% 0 0 0;
+        margin-left: 100px;
+    }
+    .geral .imagem2{
+        width: 150px;
+        height: 150px;
+        padding: 5% 0 0 0;
+        margin-left: 100px;
+    }
+    .geral .imagem3{
+        width: 150px;
+        height: 150px;
+        padding: 5% 0 0 0;
+        margin-left: 100px;
+    }
+    
+}
+@media(max-width:992px){
+    .tablet p{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(8, 1, 1);
+    }  
+    .desktop p{
+        color: rgb(155, 179, 19);
+    }
+    .phone p{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(153, 51, 51);
+        margin-left: 50px;
+    }
+    .geral{
+        display: flex;
+    }
+    .geral .imagem1 img{
+        width: 90px;
+        height: 90px;
+        padding: 5% 0 0 0;
+        margin-left: 100px;
+    }
+    .geral .imagem2 img{
+        width: 90px;
+        height: 90px;
+        padding: 5% 0 0 0;
+        margin-left: 100px;
+    }
+    .geral .imagem3 img{
+        width: 90px;
+        height: 90px;
+        padding: 5% 0 0 0;
+        margin-left: 100px;
+    }
+    
+}

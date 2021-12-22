@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Index 5</title>
+</head>
+<body>
+    <h1>Notas Aluno</h1>
+    <button onclick="nota()">Clique para calcular</button>
+    <section id="res">
+        <p>O resultado vem aqui</p>
+    </section>
+    <script>
+        function nota(){
+            let nome = prompt("Digite seu nome??");
+            // number pra poder soma correto , pq se não concatena
+            let nota1 = Number(prompt("Qual foi a primeira nota de "+nome));
+            let nota2 = Number(prompt("Além da "+nota1+".Qual foi a segunda nota de "+nome));
+            alert(`Calculando a média final de ${nome}`);
+            alert(`As nota obtidas foram ${nota1} e ${nota2}`);
+            let res = document.getElementById('res');
+            let media = (nota1 + nota2)/2;  
+            res.innerHTML= `<p>Média final será ${media} </p> `;
+        }
+    </script>
+</body>
+</html>

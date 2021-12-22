@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/Login.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1>SECARD</h1> 
+
+
+        <img src="image/senaiCerto.png">
+
+        <form id="mudarlogin">
+
+            <label><b>Nome</b></label><br>
+            <input type="text" class="corfundologin"> 
+
+            <br>
+
+
+            <label id="senhaLabel" for="senha"><b>Senha</b></label> <br>
+            <input type="password" id="senha" paceholder='' required class="corfundologin">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+
+            <br>
+            <br>
+            
+            <div class="justify-center">
+                <button class="corfundologin" onclick="Login()"> Login </button>
+            </div>
+
+            <div class="justify-center">
+                <hr>
+            </div>
+
+            <p>Não tem uma conta? <a href="http://127.0.0.1:5500/Cadastro.html?cursos=Selecione+o+Programa&cursos=Selecione+o+Curso+desejado">Cadastre-se</a></p>
+
+
+        </form>
+
+        <footer>
+            <img src="image/Sem título.png" class="imgfooterlogin">
+            <img src="image/senai.png" class="imgfooterlogin2">
+        </footer>
+
+        <script src="js/Login.js"></script>
+    </body>
+</html>

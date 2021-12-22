@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+}
+
+.sidebar {
+  width: 10%;
+  height: 100%;
+  position: fixed;
+  background-color: blueviolet;
+}
+
+.sidebar-pos {
+  position: absolute;
+  top: 20%;
+}
+
+.img-sidebar {
+    text-align: center;
+}
+
+.img-sidebar img{
+    width: 80%;
+    border-radius: 50%;
+    border:8px solid #5f1d9c;
+}
+
+.menu{
+    margin: 20% 20%;
+    text-align: center;
+    position: relative;
+}
+
+.menu a{
+    color: antiquewhite;
+    opacity: 0.4;
+    font-size: 95%;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.menu a.selected{
+    opacity: 1;
+}
+
+.selected{
+
+}

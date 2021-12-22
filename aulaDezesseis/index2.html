@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+    <h1>Parcelas</h1>
+
+    <label>Valor</label>
+    <input type="text" name="nome" id="idvalor" size="20">
+    <br><br>
+    <label>Seleção</label>
+    <select id="sel">
+        <option value="0">-- Selecione --</option>
+        <option value="1"> Parcela 1</option>
+        <option value="2"> Parcela 2</option>
+        <option value="3"> Parcela 3</option>
+        <option value="4"> Parcela 4</option>
+        <option value="5"> Parcela 5</option>
+    </select>
+    <input type="button" id="btntexto" value="Calcular" onclick="parcela()">
+    
+    <section id="situacao">
+        <p>O resultado vai aparecer aqui</p>
+    </section>
+    <script>
+        function parcela(){
+            var valor = parseInt(document.getElementById('idvalor').value);
+            var parcela = parseInt(document.getElementById('sel').value);
+            let conta = valor/parcela;
+            let res = document.getElementById('situacao');
+            res.innerHTML = `<p>O resultado é R$${conta}</p> `;
+        }
+    </script>
+</body>
+</html>

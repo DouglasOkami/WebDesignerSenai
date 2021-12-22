@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body, ul, li, p{
+    list-style: none;
+    font-size: 1.2rem;
+    font-family:sans-serif;
+}
+.topo{
+    background-color:	#1981CD;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    height: 100px;
+}
+.link-cor{
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+h2{
+  color: #00FFFF;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 50px;
+
+}
+.menu li a{
+    padding: 20px;
+    font-size: 24px;
+}
+.link-Posicao{
+    padding-left: 1000px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color:#0b63dd;
+}
+
+.containerC{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color:#0b63dd;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+.titulo{
+padding-top: 160px;
+color: #00FFFF;
+
+}
+.back-Calculos{
+    background-color: 	#007FFF;
+    width: auto;
+    height: 500px;
+}
+footer{
+    background-color: 	#094d92;
+    text-align: center;
+    font-size: 15px;
+    color:#0ba3a3;
+    height: 50px;
+}
+.contatos{
+    background-color:#0b63dd;
+    text-align: center;
+    width: auto;
+    height: 500px;
+    align-items:center;
+    text-align: center;
+    justify-self: center;
+}
+.textoE{
+    color:#00FFFF;
+}
+.textoT{
+    color:#00FFFF;
+}
+.texto-top{
+    padding-top: 180px;
+}
+.textoF{
+    padding-top: 10px;
+}
+p{
+    color:#00FFFF;
+}

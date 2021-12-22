@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula Dezesseis</title>
+</head>
+<body>
+    <h1>Média Aluno</h1>
+    <button onclick="media()">Calcular</button>
+    <section id="situacao">
+        <p>O resultado vai aparecer aqui</p>
+    </section>
+    
+    <br>
+    <br>
+    
+    <input type="radio" nome="g" id="masc" checked>
+    <input type="radio" nome="g" id="femi" >
+    <input type="button" id="btnopcap" value="OK" onclick="opcao()">
+    
+    <br>
+    <br>
+    <label>Seleção</label>
+    <select id="sel">
+        <option value="0">-- Selecione --</option>
+        <option value="1"> item 1</option>
+        <option value="2"> item 2</option>
+        <option value="3"> item 3</option>
+    </select>
+    <input type="button" id="btnselecao" value="OK" onclick="sel()">
+    
+    <label>Nome</label>
+    <input type="text" name="nome" id="idnome" size="30">
+    <input type="button" id="btntexto" onclick="texto()" value="Ok">
+
+    <!-- JavaScript -->
+    <script>
+        function media(){
+            // ` com esse eu consigo colocar ${} no texto e usar variavel
+            // " eu não consigo usar ${} no texto pra chamar variável
+            let nome = prompt(`Qual é seu nome ?`);
+            let n1 = Number(prompt(`Qual foi a primeira nota de ${nome}`));
+            let n2 = Number(prompt(`Além de ${n1}, qual foi a outra nota de ${nome}??`));
+            med = (n1+n2)/2;
+            let msg
+            if (med >=6) {
+                msg = "Meus parabéns , você passou!!"
+            }else{
+                msg = "Estudo uma pouco mais !!"
+            }
+            let res = document.getElementById('situacao');
+            res.innerHTML = `<p>Calculando a média final de ${nome}</p> `;
+            res.innerHTML += `<p>As notas obtidas foram  ${n1} e ${n2}</p> `;
+            res.innerHTML += `<p>A Média final será ${med}</p> `;
+            res.innerHTML += `<p>A mensagem que tenho é : <strong style='color:red'>${msg}</strong></p> `;
+        }
+
+        function opcao(){
+            if (document.getElementById('masc').checked) {
+                alert("test");
+            }
+        }
+
+        function sel(){
+            var sel = document.getElementById("sel").value;
+            alert("Test " + sel);
+        }
+
+        function texto(){
+            var nome = document.getElementById('idnome').value;
+            alert("Test " + nome)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula Doze</title>
+</head>
+
+<body>
+    <nav>
+        <label class="logo">DouglasOkami</label>
+        <p class="btn_menu" onclick="mostraMenu()">Menu</p>
+        <ul id="links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <img src="assets/fundo.jpg" alt="imagem-fundo">
+    <script>
+        function mostraMenu(){
+            var menu = document.getElementById("links");
+            if (menu.style.display == "block") {
+                menu.style.display = "none";
+            }else{
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

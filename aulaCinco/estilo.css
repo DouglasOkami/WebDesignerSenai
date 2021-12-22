@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(img/wallpapersden.com_neon-samurai-cyberpunk_1920x1080.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: aqua;
+    }
+:root{
+    --cor-fundo:rgb(35, 110, 68);
+    --cor-houver:rgb(0, 0, 0);
+    --cor-primaria:rgb(231,241,136);
+}
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0%;
+    background-color: var(--cor-fundo);
+}
+.dp-menu ul li{
+    display: inline;
+    position:relative;
+}
+.dp-menu ul li a{
+   color: var(--cor-primaria);
+   text-decoration: none;
+   display: inline-block;
+   padding: 15px;
+} 
+.dp-menu ul li a:hover{
+    background-color: var(--cor-houver);
+}
+.dp-menu ul li:hover ul{
+    display: block;
+}
+.dp-menu ul ul{
+    width: 80px;
+    left: 0;
+    display: none;
+    position: absolute;
+  
+
+}

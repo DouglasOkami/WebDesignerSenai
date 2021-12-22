@@ -1,0 +1,77 @@
+*{    
+    margin: 0%;   
+    padding: 0%;   
+} 
+ html,body{
+    height: 100%;   
+}  
+.sidebar{     
+    width: 15%;     
+    height: 100%;     
+    position: fixed;     
+    background-color: #D3D3D3; 
+}
+.sidebar-pos{
+    position: absolute;     
+    text-align: center;     
+    top: 20%; 
+}  
+.img-sidebar{
+    text-align: center;     
+}  
+.img-sidebar img{
+    width: 80%;     
+    border-radius: 50%;     
+    border: 3px solid #696969;    
+}  
+.menu{     
+    margin: 20px 0;     
+    text-align: center;     
+    position: relative; 
+}  
+.menu a{     
+    color: white;     
+    opacity: 0.4px;     
+    font-size: 19px;     
+    text-decoration: none;     
+    display: block;     
+    margin-bottom: 20px; 
+ }  
+.menu a.selected{
+    opacity:1; 
+}  
+.parent{     
+    display: flex; 
+}  
+.content{     
+    position: absolute;     
+    left: 20%;     
+    width: 80%;     
+    height: 100%;     
+    padding: 0 3%; 
+}  
+section.descricao{     
+    position: relative;     
+    top: 50%; 
+}  
+section.descricao h2{     
+    color: #343A40;     
+    font-size: 46px; 
+}
+
+/*.img-sidebar{
+    text-align: center;
+    padding: 10px;//atenção aqui pode ter sido isso que causou confusão
+}
+.img-sidebar img{
+    height: 150px; //o height não é usado [fazer teste se era isso] 
+    width: 150px; //aqui é em porcetagem de 100%
+    border-radius: 50%;
+    border: 5px solid #696969;
+  
+}
+.menu{
+    margin: 26% 26%;// aqui no código certo é 20% 0
+    text-align: center;
+    position: relative;
+}
